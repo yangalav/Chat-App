@@ -1,7 +1,7 @@
 module.exports = function(app, express) {
 
   app.get('/', function(req, res){
-    res.send('YAS');
+    res.sendFile(__dirname + '../client/index.html');
   })
 
 };
